@@ -4,8 +4,7 @@ import { getUsers, getTopics, sendLetter, fetchUsers } from "./dataAcess.js"
 document.addEventListener("click", e => {
     if (e.target.id === "sendButton") {
         const userAuthor = document.querySelector(`select[id="author"]`).value
-        const userText = document.querySelector(`input[name="letterBody"]`).value
-        const userTopic = document.querySelector(`input[name="topic"]`).value
+        const userText = document.querySelector(`textarea[name="letterBody"]`).value
         const userRecipient = document.querySelector(`select[id="recipient"]`).value
 
         const userLetter = {
@@ -21,6 +20,7 @@ document.addEventListener("click", e => {
 
 export const penPalForm = () => {
     return `
+    <div id="penpal">
         <div class="field">
             <label for="author">Author</label>
             <select id="author">
@@ -30,7 +30,7 @@ export const penPalForm = () => {
         </div>
         <div class="field">
             <label for="letterBody">Letter</label>
-            <input type="text" name="letterBody">
+            <textarea type="text" id="letterBody" name="letterBody" placeholder="Write message here..."></textarea>
         </div>
         <div class="field">
             <label for="topic">Topics</label>
@@ -45,7 +45,7 @@ export const penPalForm = () => {
         </div>
 
         <button id="sendButton">Send Letter</button>
-
+    </div>
     `
 }
 
@@ -63,11 +63,18 @@ const displayUsers = () => {
 const displayTopics = () => {
     let topics = getTopics()
     const options = topics.map(topic => {
-        return `<label>
-                    <input type="radio" name="topic" value="${topic.type}">${topic.type}</label>`
+        return `<label for="topic">
+                    <input type="radio" id="topic" name="topic" value="${topic.type}">${topic.type}</label>`
     })
 
     const html = options.join("")
 
     return html
 }
+
+let userTopic = ""
+document.addEventListener("click", e => {
+    if (e.target.id === "topic") {
+        userTopic = e.target.value;
+    }
+})

@@ -2,27 +2,27 @@ import { getLetters } from "./dataAcess.js";
 
 export const lettersList = () => {
     const letters = getLetters()
-    let html = "<ul>"
-    let list = letters.map(letter => {
-        return `<li>Dear ${letter.recipient}, ${letter.letterText} Sincerely, ${letter.author}</li>`
+    
+    let letterList = letters.map(letter => {
+        return  `
+        <div id="letter">
+            Dear ${letter.recipient}, 
+            <br>
+            <br>
+            ${letter.letterText} 
+            <br>
+            <br>
+            Sincerely, 
+            <div id="signature">
+                ${letter.author}
+            </div>
+            <div id="letter-topics">
+                ${letter.topic}
+            </div>
+        </div>`
     })
 
-    html += list.join("")
-
-    html += `</ul>`
-
+    let html = letterList.join("")
+        
     return html
-
 }
-
-/*
-
-   {
-      "author": "Dolly Parton",
-      "letterText": "I will always love you",
-      "topic": "Business",
-      "recipient": "Kacey Musgraves",
-      "id": 9
-    }
-
-*/

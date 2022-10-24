@@ -1,12 +1,28 @@
 body,
-select,
 input,
 option,
 button {
 	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.5;
+}
+
+select {
+    color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+    width: 600px;
+}
+
+textarea {
+    color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+    width: 600px;
+    height: 250px;
 }
 
 label {
@@ -19,4 +35,34 @@ label {
 h1,h2,h3,h4,h5,h6 {
     font-family: "Patua One", serif;
     letter-spacing: 2px;
+  }
+
+  #letter {
+    color: #404040;
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 600px;
+    height: 250px;
+    background-color: #fcd5ce;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #6d6875;
+    margin-bottom: 10px;
+  }
+
+  #signature {
+    font-family: cursive;
+  }
+
+  #letter-topics {
+    font-size: 14px;
+    background-color: #ffb5a7;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px dotted red;
   }

@@ -2,10 +2,24 @@
   "letters": [
     {
       "author": "Reba McEntire",
-      "letterText": "\"That's why people fight for it, rise for it Burn up the night for it Cry for it, pine for it Cross rivers wide for it Once you've held the truth There's nothing you won't do And when I look into your eyes I know why people died for it Freedom Loving you feels like freedom\" What do you think of my new lyrics?",
+      "letterText": "\"That's why people fight for it, rise for it Burn up the night for it Cry for it, pine for it Cross rivers wide for it Once you've held the truth There's nothing you won't do And when I look into your eyes I know why people died for it Freedom Loving you feels like freedom\" What do you think of my new lyrics?\n",
       "topic": "Business",
       "recipient": "Carrie Underwood",
       "id": 1
+    },
+    {
+      "author": "Dolly Parton",
+      "letterText": "I just wrote a new song that got picked up by Whitney Houston! Check out the lyrics: \"And I hope life, will treat you kind And I hope that you have all That you ever dreamed of Oh I do wish you joy And I wish you happiness But above all this I wish you love I love you I will always love you\"\n",
+      "topic": "Friendly",
+      "recipient": "Miranda Lambert",
+      "id": 2
+    },
+    {
+      "author": "Carrie Underwood",
+      "letterText": "Congratulations on winning Album of the Year at the Grammy Awards! Your music is incredible!",
+      "topic": "Congratulations",
+      "recipient": "Kacey Musgraves",
+      "id": 3
     }
   ],
   "users": [
