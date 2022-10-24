@@ -1,0 +1,55 @@
+{
+  "letters": [
+    {
+      "author": "Reba McEntire",
+      "letterText": "\"That's why people fight for it, rise for it Burn up the night for it Cry for it, pine for it Cross rivers wide for it Once you've held the truth There's nothing you won't do And when I look into your eyes I know why people died for it Freedom Loving you feels like freedom\" What do you think of my new lyrics?",
+      "topic": "Business",
+      "recipient": "Carrie Underwood",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Carrie Underwood"
+    },
+    {
+      "id": 2,
+      "name": "Kacey Musgraves"
+    },
+    {
+      "id": 3,
+      "name": "Dolly Parton"
+    },
+    {
+      "id": 4,
+      "name": "Miranda Lambert"
+    },
+    {
+      "id": 5,
+      "name": "Reba McEntire"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "type": "Business"
+    },
+    {
+      "id": 2,
+      "type": "Friendly"
+    },
+    {
+      "id": 3,
+      "type": "Family"
+    },
+    {
+      "id": 4,
+      "type": "Congratulations"
+    },
+    {
+      "id": 5,
+      "type": "Condolences"
+    }
+  ]
+}
